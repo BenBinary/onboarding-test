@@ -11,13 +11,25 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var blurView: UIVisualEffectView!
+    @IBOutlet weak var btnCamera: UIButton!
+    @IBOutlet weak var btnAddContainer: UIButton!
+    @IBOutlet weak var btnContainerCatalogue: UIButton!
+    @IBOutlet weak var btnInfo: UIButton!
+    @IBOutlet weak var lblInfo: UILabel!
+    @IBOutlet weak var lblContainerChoice: UILabel!
+    @IBOutlet weak var lblContainerCatalogue: UILabel!
+    @IBOutlet weak var btnStepForward: UIButton!
     
+    var stepper: Int  = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         blurView.isHidden = true
+        
+        
+        
     }
 
     @IBAction func btnAdd(_ sender: UIButton) {

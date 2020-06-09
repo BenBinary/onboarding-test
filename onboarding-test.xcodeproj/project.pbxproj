@@ -16,6 +16,7 @@
 		CDEB3FC1248F9429007300C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB3FBF248F9429007300C9 /* LaunchScreen.storyboard */; };
 		CDEB3FCC248F9429007300C9 /* onboarding_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB3FCB248F9429007300C9 /* onboarding_testTests.swift */; };
 		CDEB3FD7248F9429007300C9 /* onboarding_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB3FD6248F9429007300C9 /* onboarding_testUITests.swift */; };
+		CDEB3FE5248FACB2007300C9 /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = CDEB3FE4248FACB2007300C9 /* SceneKit Scene.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CDEB3FD2248F9429007300C9 /* onboarding-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "onboarding-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEB3FD6248F9429007300C9 /* onboarding_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboarding_testUITests.swift; sourceTree = "<group>"; };
 		CDEB3FD8248F9429007300C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDEB3FE4248FACB2007300C9 /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				CDEB3FBF248F9429007300C9 /* LaunchScreen.storyboard */,
 				CDEB3FC2248F9429007300C9 /* Info.plist */,
 				CDEB3FBA248F9425007300C9 /* onboarding_test.xcdatamodeld */,
+				CDEB3FE4248FACB2007300C9 /* SceneKit Scene.scn */,
 			);
 			path = "onboarding-test";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEB3FE5248FACB2007300C9 /* SceneKit Scene.scn in Resources */,
 				CDEB3FC1248F9429007300C9 /* LaunchScreen.storyboard in Resources */,
 				CDEB3FBE248F9429007300C9 /* Assets.xcassets in Resources */,
 				CDEB3FB9248F9425007300C9 /* Main.storyboard in Resources */,
