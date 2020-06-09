@@ -32,7 +32,10 @@ class ViewController: UIViewController {
         
         if blurView.isHidden {
             
-                blurView.isHidden = false
+            blurView.isHidden = false
+          //  blurView.isUserInteractionEnabled = true
+            
+            
         } else {
             
             blurView.isHidden = true
@@ -43,8 +46,21 @@ class ViewController: UIViewController {
     
     @IBAction func btnEnableDIsable(_ sender: UIButton) {
         
+        if blurView.effect == .none {
+            
+            blurView.effect =  UIBlurEffect(style: .light) //UIVisualEffect(effect: UIBlurEffect(style: .dark))
+            
+        } else {
         
-        blurView.isUserInteractionEnabled = true
+
+            blurView.effect = .none
+            //blurView.isUserInteractionEnabled = true
+        }
+    
+        
+        
+        
+        
         
     }
 }
