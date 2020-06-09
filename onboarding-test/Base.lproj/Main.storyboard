@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gZy-2v-tvF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,134 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="onboarding_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8kf-m4-jgz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lax-Wx-WzW">
+            <objects>
+                <viewController id="gZy-2v-tvF" customClass="ViewController" customModule="onboarding_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfu-aA-7ED">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFT-uk-1FV">
+                                <rect key="frame" x="0.0" y="12" width="414" height="742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yxm-KL-9MP">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="742"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFc-R2-cgB">
+                                            <rect key="frame" x="301" y="404.5" width="74" height="74"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="74" id="TeJ-Sb-N4f"/>
+                                                <constraint firstAttribute="height" constant="75" id="UVW-O6-3Tr"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.85870492460000003" green="0.40988093609999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <state key="normal" backgroundImage="arrow.right.circle.fill" catalog="system"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="hKk-hc-BKH"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5j-Y0-J0d">
+                                            <rect key="frame" x="35" y="654.5" width="50" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="YmC-qY-F9P"/>
+                                                <constraint firstAttribute="height" constant="40" id="foN-UC-1n8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <state key="normal" backgroundImage="container">
+                                                <color key="titleShadowColor" red="0.85870492460000003" green="0.40988093609999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LH-sy-Qjk">
+                                            <rect key="frame" x="185" y="637.5" width="75" height="74"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="BdS-CM-r7W"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Bpm-05-8OX"/>
+                                                <constraint firstAttribute="width" constant="75" id="G0u-XI-fGT"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="aTC-Lo-yT8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="tintColor" red="0.80434203150000005" green="0.43320214750000002" blue="0.1604930758" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <state key="normal" backgroundImage="plus.circle.fill" catalog="system">
+                                                <color key="titleColor" red="0.7861766644" green="0.78237870949999999" blue="0.78997461930000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnAdd:" destination="gZy-2v-tvF" eventType="touchUpInside" id="TQa-il-a3Q"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-Sq-zsy">
+                                            <rect key="frame" x="338" y="783" width="50" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="23n-Qe-eqS"/>
+                                                <constraint firstAttribute="width" constant="50" id="TJ9-Ez-E1d"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" backgroundImage="camera">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="mLb-Sq-zsy" secondAttribute="bottom" constant="66" id="43T-Zs-TEK"/>
+                                        <constraint firstItem="mLb-Sq-zsy" firstAttribute="leading" secondItem="9LH-sy-Qjk" secondAttribute="trailing" constant="96" id="5RE-xb-kXd"/>
+                                        <constraint firstAttribute="bottom" secondItem="9LH-sy-Qjk" secondAttribute="bottom" constant="30" id="9pS-7u-qXC"/>
+                                        <constraint firstItem="9LH-sy-Qjk" firstAttribute="centerY" secondItem="U5j-Y0-J0d" secondAttribute="centerY" id="Eng-8y-dD2"/>
+                                        <constraint firstAttribute="trailing" secondItem="QFc-R2-cgB" secondAttribute="trailing" constant="30" id="RnY-VM-CB0"/>
+                                        <constraint firstItem="9LH-sy-Qjk" firstAttribute="leading" secondItem="yxm-KL-9MP" secondAttribute="leading" constant="185" id="iB2-Lp-92m"/>
+                                        <constraint firstItem="QFc-R2-cgB" firstAttribute="top" secondItem="yxm-KL-9MP" secondAttribute="top" constant="404" id="t0d-mo-uQW"/>
+                                        <constraint firstItem="U5j-Y0-J0d" firstAttribute="leading" secondItem="yxm-KL-9MP" secondAttribute="leading" constant="35" id="wEQ-MJ-JyB"/>
+                                    </constraints>
+                                </view>
+                                <vibrancyEffect style="fill">
+                                    <blurEffect style="systemUltraThinMaterial"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rs7-Xh-YIB">
+                                <rect key="frame" x="70" y="808" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hide / Unhide"/>
+                                <connections>
+                                    <action selector="btnButtonDoAll:" destination="gZy-2v-tvF" eventType="touchUpInside" id="3gr-W4-AQe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhS-zC-NY1">
+                                <rect key="frame" x="246" y="808" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enable / Disable"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="S0t-RG-xv4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XIN-6t-xie"/>
+                    <connections>
+                        <outlet property="blurView" destination="AFT-uk-1FV" id="Fjj-t4-2W1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHv-t7-1iG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759.4202898550725" y="145.98214285714286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="camera" width="364" height="248"/>
+        <image name="container" width="341.5" height="278"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
