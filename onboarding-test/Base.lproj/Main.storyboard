@@ -247,7 +247,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" sceneName="SceneKit Scene.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KS0-DI-0F2" userLabel="0">
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" sceneName="SceneKit Scene.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KS0-DI-0F2" userLabel="0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </sceneKitView>
@@ -309,7 +309,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZ1-1B-dFC">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZ1-1B-dFC">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W3h-qa-OOf">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -328,15 +328,15 @@
                                         </visualEffectView>
                                     </subviews>
                                 </view>
-                                <blurEffect style="regular"/>
+                                <blurEffect style="systemUltraThinMaterial"/>
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="IZ1-1B-dFC" firstAttribute="top" secondItem="kpz-P1-5LV" secondAttribute="top" id="8II-Mr-ydK"/>
+                            <constraint firstItem="IZ1-1B-dFC" firstAttribute="top" secondItem="WxS-kj-tzd" secondAttribute="top" id="8II-Mr-ydK"/>
                             <constraint firstAttribute="bottom" secondItem="ZKA-bW-EJZ" secondAttribute="bottom" constant="20" id="8hQ-xV-gj9"/>
                             <constraint firstItem="2ud-ks-Vr4" firstAttribute="centerX" secondItem="WxS-kj-tzd" secondAttribute="centerX" id="GcU-KZ-U5B"/>
-                            <constraint firstItem="IZ1-1B-dFC" firstAttribute="leading" secondItem="kpz-P1-5LV" secondAttribute="leading" id="MVK-sJ-8iS"/>
+                            <constraint firstItem="IZ1-1B-dFC" firstAttribute="leading" secondItem="WxS-kj-tzd" secondAttribute="leading" id="MVK-sJ-8iS"/>
                             <constraint firstItem="zj4-Ga-3Cp" firstAttribute="trailing" secondItem="WxS-kj-tzd" secondAttribute="trailing" id="N7K-j1-Vrb"/>
                             <constraint firstAttribute="bottom" secondItem="3fZ-ZP-DFK" secondAttribute="bottom" constant="20" id="QD6-wM-4lA"/>
                             <constraint firstAttribute="bottom" secondItem="B6X-bR-mZL" secondAttribute="bottom" constant="20" id="Uyl-SZ-oy6"/>
@@ -344,12 +344,11 @@
                             <constraint firstItem="zj4-Ga-3Cp" firstAttribute="top" secondItem="WxS-kj-tzd" secondAttribute="top" id="cKE-Uo-aD9"/>
                             <constraint firstItem="2ud-ks-Vr4" firstAttribute="centerY" secondItem="WxS-kj-tzd" secondAttribute="centerY" constant="137" id="drj-rA-7AJ"/>
                             <constraint firstItem="B6X-bR-mZL" firstAttribute="centerX" secondItem="WxS-kj-tzd" secondAttribute="centerX" id="eCn-Vi-xkQ"/>
-                            <constraint firstItem="IZ1-1B-dFC" firstAttribute="trailing" secondItem="kpz-P1-5LV" secondAttribute="trailing" id="je8-mb-ub8"/>
+                            <constraint firstItem="IZ1-1B-dFC" firstAttribute="trailing" secondItem="WxS-kj-tzd" secondAttribute="trailing" id="je8-mb-ub8"/>
                             <constraint firstAttribute="bottom" secondItem="IZ1-1B-dFC" secondAttribute="bottom" id="ncF-3C-mor"/>
                             <constraint firstAttribute="trailing" secondItem="3fZ-ZP-DFK" secondAttribute="trailing" constant="20" id="qKD-vV-OIA"/>
                             <constraint firstItem="zj4-Ga-3Cp" firstAttribute="leading" secondItem="WxS-kj-tzd" secondAttribute="leading" id="vYh-8R-tP8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="kpz-P1-5LV"/>
                     </view>
                     <navigationItem key="navigationItem" id="9Yi-Sc-Vvc"/>
                     <nil key="simulatedTopBarMetrics"/>

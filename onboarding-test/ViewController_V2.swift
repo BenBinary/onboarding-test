@@ -30,13 +30,20 @@ class ViewController_V2: UIViewController {
         let object = scnkitview.scene?.rootNode.childNode(withName: "ABS_5QM_OFFEN", recursively: true)
         
         
+        let rotate = SCNAction.rotateBy(x: 0, y: .pi, z: 0, duration: 5)
+        let repeatForever = SCNAction.repeatForever(rotate)
+        
+        
         let spin = CABasicAnimation(keyPath: "rotation")
         // Use from-to to explicitly make a full rotation around z
         spin.fromValue = NSValue(scnVector4: SCNVector4(x: 0, y: 0, z: 1, w: 0))
-        spin.toValue = NSValue(scnVector4: SCNVector4(x: 0, y: 0, z: 1, w: Float(CGFloat(2 * M_PI))))
-        spin.duration = 3
+        spin.toValue = NSValue(scnVector4: SCNVector4(x: 0, y: 0, z: 1, w: .pi))
+        spin.duration = 1
         spin.repeatCount = .infinity
-        object!.addAnimation(spin, forKey: "spin around")
+        //object!.addAnimation(spin, forKey: "spin around")
+        
+        
+        object?.runAction(repeatForever)
         
         
         //object?.addAnimation(an, forKey: <#T##String?#>)
