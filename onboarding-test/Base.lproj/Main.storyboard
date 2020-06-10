@@ -224,10 +224,10 @@
             </objects>
             <point key="canvasLocation" x="-759.4202898550725" y="145.98214285714286"/>
         </scene>
-        <!--View Controller Start-->
+        <!--View ControllerV2-->
         <scene sceneID="he0-3d-TfV">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="5mO-qq-uc1" customClass="ViewControllerStart" customModule="ContainAR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="5mO-qq-uc1" customClass="ViewController_V2" customModule="onboarding_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WxS-kj-tzd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -236,10 +236,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <gestureRecognizers/>
                             </arscnView>
-                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pd7-VZ-SVu">
-                                <rect key="frame" x="20" y="620" width="374" height="92"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6X-bR-mZL">
                                 <rect key="frame" x="169.5" y="747.5" width="75" height="74"/>
                                 <constraints>
@@ -257,6 +253,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="CqS-7W-ohP"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="P0M-Y7-xjj" kind="embed" id="C2L-Uu-RxK"/>
+                                </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fZ-ZP-DFK">
                                 <rect key="frame" x="344" y="787" width="50" height="35"/>
@@ -309,11 +308,11 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="btnAbout" destination="ZKA-bW-EJZ" id="xBo-mx-Y0P"/>
-                        <outlet property="btnAdd" destination="B6X-bR-mZL" id="RZC-ip-4Wg"/>
+                        <outlet property="btnAbout" destination="ZKA-bW-EJZ" id="vyS-er-BE4"/>
+                        <outlet property="btnAdd" destination="B6X-bR-mZL" id="ds4-jG-9kb"/>
                         <outlet property="btnCamera" destination="3fZ-ZP-DFK" id="PcQ-S1-fDM"/>
                         <outlet property="btnCameraShot" destination="3fZ-ZP-DFK" id="rHG-2Y-wEd"/>
-                        <outlet property="cvAddImages" destination="pd7-VZ-SVu" id="iRL-hB-693"/>
+                        <outlet property="btnScreenshot" destination="3fZ-ZP-DFK" id="8Qw-Mc-Tlq"/>
                         <outlet property="sceneView" destination="Fgw-wS-d1X" id="Fvn-Oa-O0O"/>
                         <outlet property="upperControlsView" destination="zj4-Ga-3Cp" id="30k-2p-1Wl"/>
                     </connections>
@@ -322,12 +321,12 @@
             </objects>
             <point key="canvasLocation" x="322" y="146"/>
         </scene>
-        <!--Status View Controller-->
+        <!--View Controller-->
         <scene sceneID="OYo-pI-Ox2">
             <objects>
-                <viewController id="P0M-Y7-xjj" customClass="StatusViewController" customModule="ContainAR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="P0M-Y7-xjj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mw5-fq-Uy0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjH-On-f1B">
@@ -384,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukW-50-b1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1143" y="146"/>
+            <point key="canvasLocation" x="1132" y="-64"/>
         </scene>
     </scenes>
     <resources>
