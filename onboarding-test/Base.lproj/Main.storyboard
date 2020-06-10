@@ -222,7 +222,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-759.4202898550725" y="145.98214285714286"/>
+            <point key="canvasLocation" x="-441" y="167"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="L16-Af-T9v">
@@ -247,9 +247,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" playing="YES" sceneName="SceneKit Scene.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6k-8M-8zs" customClass="arscnview" customModule="onboarding_test" customModuleProvider="target">
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" sceneName="SceneKit Scene.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KS0-DI-0F2" userLabel="0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                            </arscnView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </sceneKitView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6X-bR-mZL">
                                 <rect key="frame" x="169.5" y="747.5" width="75" height="74"/>
                                 <constraints>
@@ -308,7 +309,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZ1-1B-dFC">
+                            <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZ1-1B-dFC">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W3h-qa-OOf">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -332,14 +333,11 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="G6k-8M-8zs" firstAttribute="top" secondItem="kpz-P1-5LV" secondAttribute="top" id="33P-Jf-5TI"/>
-                            <constraint firstItem="G6k-8M-8zs" firstAttribute="leading" secondItem="kpz-P1-5LV" secondAttribute="leading" id="5Lv-qf-p0S"/>
                             <constraint firstItem="IZ1-1B-dFC" firstAttribute="top" secondItem="kpz-P1-5LV" secondAttribute="top" id="8II-Mr-ydK"/>
                             <constraint firstAttribute="bottom" secondItem="ZKA-bW-EJZ" secondAttribute="bottom" constant="20" id="8hQ-xV-gj9"/>
                             <constraint firstItem="2ud-ks-Vr4" firstAttribute="centerX" secondItem="WxS-kj-tzd" secondAttribute="centerX" id="GcU-KZ-U5B"/>
                             <constraint firstItem="IZ1-1B-dFC" firstAttribute="leading" secondItem="kpz-P1-5LV" secondAttribute="leading" id="MVK-sJ-8iS"/>
                             <constraint firstItem="zj4-Ga-3Cp" firstAttribute="trailing" secondItem="WxS-kj-tzd" secondAttribute="trailing" id="N7K-j1-Vrb"/>
-                            <constraint firstItem="G6k-8M-8zs" firstAttribute="trailing" secondItem="kpz-P1-5LV" secondAttribute="trailing" id="PIJ-Uh-yRi"/>
                             <constraint firstAttribute="bottom" secondItem="3fZ-ZP-DFK" secondAttribute="bottom" constant="20" id="QD6-wM-4lA"/>
                             <constraint firstAttribute="bottom" secondItem="B6X-bR-mZL" secondAttribute="bottom" constant="20" id="Uyl-SZ-oy6"/>
                             <constraint firstItem="ZKA-bW-EJZ" firstAttribute="leading" secondItem="WxS-kj-tzd" secondAttribute="leading" constant="20" id="XD2-th-cib"/>
@@ -350,7 +348,6 @@
                             <constraint firstAttribute="bottom" secondItem="IZ1-1B-dFC" secondAttribute="bottom" id="ncF-3C-mor"/>
                             <constraint firstAttribute="trailing" secondItem="3fZ-ZP-DFK" secondAttribute="trailing" constant="20" id="qKD-vV-OIA"/>
                             <constraint firstItem="zj4-Ga-3Cp" firstAttribute="leading" secondItem="WxS-kj-tzd" secondAttribute="leading" id="vYh-8R-tP8"/>
-                            <constraint firstAttribute="bottom" secondItem="G6k-8M-8zs" secondAttribute="bottom" id="xOq-3q-N7O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kpz-P1-5LV"/>
                     </view>
@@ -358,7 +355,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="sceneview" destination="G6k-8M-8zs" id="cbh-8F-AXM"/>
+                        <outlet property="scnkitview" destination="KS0-DI-0F2" id="D7k-xc-fM6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uri-dl-cjR" sceneMemberID="firstResponder"/>
