@@ -19,7 +19,9 @@ class ViewController_V2: UIViewController {
     @IBOutlet weak var btnAdd: UIButton!
     @IBOutlet weak var btnScreenshot: UIButton!
     
-
+    @IBOutlet weak var blurView: UIVisualEffectView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,6 +49,15 @@ class ViewController_V2: UIViewController {
         
         
         //object?.addAnimation(an, forKey: <#T##String?#>)
+    }
+    
+    
+    
+    
+    @IBAction func btnHideBlurView(_ sender: Any) {
+        
+        blurView.isHidden = true
+        
     }
     
 

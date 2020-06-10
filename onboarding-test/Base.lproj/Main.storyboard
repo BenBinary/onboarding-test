@@ -222,7 +222,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-441" y="167"/>
+            <point key="canvasLocation" x="-564" y="135"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="L16-Af-T9v">
@@ -363,10 +363,10 @@
                                             <state key="normal" backgroundImage="Info"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMz-cr-7QI" userLabel="Restart Experience Button Icon">
-                                            <rect key="frame" x="362" y="55" width="35" height="40"/>
+                                            <rect key="frame" x="363" y="55" width="35" height="40"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="Ll3-nR-0un"/>
-                                                <constraint firstAttribute="height" constant="40" id="lxq-LY-l3j"/>
+                                                <constraint firstAttribute="height" constant="40" id="h52-ia-a63"/>
+                                                <constraint firstAttribute="width" constant="35" id="t4t-Pz-VZO"/>
                                             </constraints>
                                             <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="12"/>
                                             <state key="normal" image="restart"/>
@@ -386,18 +386,33 @@
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrU-Bm-SSW">
+                                            <rect key="frame" x="172" y="51" width="73" height="70.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="73" id="90f-bN-d7s"/>
+                                                <constraint firstAttribute="height" constant="73" id="J49-pn-vVm"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.85870492460000003" green="0.40988093609999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <state key="normal" backgroundImage="clear" catalog="system"/>
+                                            <connections>
+                                                <action selector="btnHideBlurView:" destination="5mO-qq-uc1" eventType="touchUpInside" id="G4k-Q7-yY5"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="wrU-Bm-SSW" secondAttribute="trailing" constant="169" id="63h-Ey-c6R"/>
+                                        <constraint firstItem="wrU-Bm-SSW" firstAttribute="top" secondItem="W3h-qa-OOf" secondAttribute="top" constant="50" id="AyH-ac-u3X"/>
                                         <constraint firstAttribute="bottom" secondItem="umg-HD-UUf" secondAttribute="bottom" constant="23" id="IW8-cw-1RJ"/>
                                         <constraint firstItem="vqU-wQ-a1n" firstAttribute="leading" secondItem="W3h-qa-OOf" secondAttribute="leading" constant="20" id="PsQ-82-MHF"/>
                                         <constraint firstItem="1GT-pK-5e0" firstAttribute="centerX" secondItem="umg-HD-UUf" secondAttribute="centerX" id="Thn-t5-Kda"/>
                                         <constraint firstAttribute="bottom" secondItem="vqU-wQ-a1n" secondAttribute="bottom" constant="23" id="U2X-mG-r8Y"/>
-                                        <constraint firstAttribute="trailing" secondItem="TMz-cr-7QI" secondAttribute="trailing" constant="17" id="VXZ-1j-P3f"/>
+                                        <constraint firstAttribute="trailing" secondItem="TMz-cr-7QI" secondAttribute="trailing" constant="16" id="Zrs-W0-S0O"/>
                                         <constraint firstItem="mAe-hZ-88i" firstAttribute="leading" secondItem="W3h-qa-OOf" secondAttribute="leading" constant="10" id="dtr-cm-CHW"/>
+                                        <constraint firstItem="wrU-Bm-SSW" firstAttribute="leading" secondItem="W3h-qa-OOf" secondAttribute="leading" constant="172" id="iM0-nV-XnM"/>
                                         <constraint firstAttribute="bottom" secondItem="1GT-pK-5e0" secondAttribute="bottom" constant="270" id="ndd-ts-MDr"/>
                                         <constraint firstAttribute="bottom" secondItem="XvX-jb-edG" secondAttribute="bottom" constant="28" id="otv-QO-mU4"/>
                                         <constraint firstItem="umg-HD-UUf" firstAttribute="centerX" secondItem="W3h-qa-OOf" secondAttribute="centerX" id="pCC-i1-5lu"/>
-                                        <constraint firstItem="TMz-cr-7QI" firstAttribute="top" secondItem="W3h-qa-OOf" secondAttribute="top" constant="55" id="rJS-z2-kFw"/>
+                                        <constraint firstItem="TMz-cr-7QI" firstAttribute="top" secondItem="W3h-qa-OOf" secondAttribute="top" constant="55" id="qOT-y7-QJX"/>
                                         <constraint firstItem="mAe-hZ-88i" firstAttribute="top" secondItem="W3h-qa-OOf" secondAttribute="top" constant="50" id="umO-GQ-fXK"/>
                                         <constraint firstAttribute="trailing" secondItem="XvX-jb-edG" secondAttribute="trailing" constant="17" id="xwN-Nk-hov"/>
                                     </constraints>
@@ -428,6 +443,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="blurView" destination="IZ1-1B-dFC" id="1Bw-uu-Nc9"/>
                         <outlet property="scnkitview" destination="KS0-DI-0F2" id="D7k-xc-fM6"/>
                     </connections>
                 </viewController>
@@ -465,7 +481,7 @@
                                 <state key="selected" image="restartPressed"/>
                                 <state key="highlighted" image="restartPressed"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcx-BQ-Dw9">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcx-BQ-Dw9">
                                 <rect key="frame" x="182" y="54.5" width="50" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9mj-RI-g6p"/>
@@ -499,6 +515,7 @@
         <image name="arrow.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
         <image name="camera" width="364" height="248"/>
+        <image name="clear" catalog="system" width="128" height="114"/>
         <image name="container" width="341.5" height="278"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
