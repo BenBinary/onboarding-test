@@ -315,18 +315,92 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBi-RO-ZKK">
-                                            <rect key="frame" x="0.0" y="0.0" width="174" height="714"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Jli-Yy-4Ud">
-                                                <rect key="frame" x="0.0" y="0.0" width="174" height="714"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </view>
-                                            <vibrancyEffect>
-                                                <blurEffect style="regular"/>
-                                            </vibrancyEffect>
-                                        </visualEffectView>
+                                        <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqU-wQ-a1n">
+                                            <rect key="frame" x="20" y="779" width="50" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="EbL-5n-h1w"/>
+                                                <constraint firstAttribute="height" constant="40" id="MAo-8E-ZdJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <state key="normal" backgroundImage="container">
+                                                <color key="titleShadowColor" red="0.85870492460000003" green="0.40988093609999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umg-HD-UUf">
+                                            <rect key="frame" x="169.5" y="744.5" width="75" height="74"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="JbT-p4-PM4"/>
+                                                <constraint firstAttribute="width" constant="75" id="gj8-A9-0o4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="tintColor" red="0.80434203150000005" green="0.43320214750000002" blue="0.1604930758" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <state key="normal" backgroundImage="plus.circle.fill" catalog="system">
+                                                <color key="titleColor" red="0.7861766644" green="0.78237870949999999" blue="0.78997461930000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvX-jb-edG">
+                                            <rect key="frame" x="347" y="779" width="50" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="UNb-QM-hQg"/>
+                                                <constraint firstAttribute="height" constant="35" id="jMv-wh-oWq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" backgroundImage="camera">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAe-hZ-88i">
+                                            <rect key="frame" x="10" y="50" width="40" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="C4k-PH-W7f"/>
+                                                <constraint firstAttribute="height" constant="50" id="dQq-YW-lAc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <state key="normal" backgroundImage="Info"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMz-cr-7QI" userLabel="Restart Experience Button Icon">
+                                            <rect key="frame" x="362" y="55" width="35" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="35" id="Ll3-nR-0un"/>
+                                                <constraint firstAttribute="height" constant="40" id="lxq-LY-l3j"/>
+                                            </constraints>
+                                            <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="12"/>
+                                            <state key="normal" image="restart"/>
+                                            <state key="selected" image="restartPressed"/>
+                                            <state key="highlighted" image="restartPressed"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GT-pK-5e0">
+                                            <rect key="frame" x="107" y="512" width="200" height="60"/>
+                                            <color key="backgroundColor" red="0.85870492460000003" green="0.40988093609999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="PFh-tq-vMd"/>
+                                                <constraint firstAttribute="height" constant="60" id="VfM-QO-SMd"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="  Bilder versenden" image="square.and.arrow.up" catalog="system">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="umg-HD-UUf" secondAttribute="bottom" constant="23" id="IW8-cw-1RJ"/>
+                                        <constraint firstItem="vqU-wQ-a1n" firstAttribute="leading" secondItem="W3h-qa-OOf" secondAttribute="leading" constant="20" id="PsQ-82-MHF"/>
+                                        <constraint firstItem="1GT-pK-5e0" firstAttribute="centerX" secondItem="umg-HD-UUf" secondAttribute="centerX" id="Thn-t5-Kda"/>
+                                        <constraint firstAttribute="bottom" secondItem="vqU-wQ-a1n" secondAttribute="bottom" constant="23" id="U2X-mG-r8Y"/>
+                                        <constraint firstAttribute="trailing" secondItem="TMz-cr-7QI" secondAttribute="trailing" constant="17" id="VXZ-1j-P3f"/>
+                                        <constraint firstItem="mAe-hZ-88i" firstAttribute="leading" secondItem="W3h-qa-OOf" secondAttribute="leading" constant="10" id="dtr-cm-CHW"/>
+                                        <constraint firstAttribute="bottom" secondItem="1GT-pK-5e0" secondAttribute="bottom" constant="270" id="ndd-ts-MDr"/>
+                                        <constraint firstAttribute="bottom" secondItem="XvX-jb-edG" secondAttribute="bottom" constant="28" id="otv-QO-mU4"/>
+                                        <constraint firstItem="umg-HD-UUf" firstAttribute="centerX" secondItem="W3h-qa-OOf" secondAttribute="centerX" id="pCC-i1-5lu"/>
+                                        <constraint firstItem="TMz-cr-7QI" firstAttribute="top" secondItem="W3h-qa-OOf" secondAttribute="top" constant="55" id="rJS-z2-kFw"/>
+                                        <constraint firstItem="mAe-hZ-88i" firstAttribute="top" secondItem="W3h-qa-OOf" secondAttribute="top" constant="50" id="umO-GQ-fXK"/>
+                                        <constraint firstAttribute="trailing" secondItem="XvX-jb-edG" secondAttribute="trailing" constant="17" id="xwN-Nk-hov"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="systemUltraThinMaterial"/>
                             </visualEffectView>
@@ -417,7 +491,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukW-50-b1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="-64"/>
+            <point key="canvasLocation" x="1138" y="-66"/>
         </scene>
     </scenes>
     <resources>
