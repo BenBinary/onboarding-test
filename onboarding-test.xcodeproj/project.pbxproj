@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD7291EB249105F1008176EB /* ViewController_V2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7291EA249105F1008176EB /* ViewController_V2.swift */; };
+		CD7291ED24910F1A008176EB /* arscnview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7291EC24910F1A008176EB /* arscnview.swift */; };
 		CDEB3FB2248F9425007300C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB3FB1248F9425007300C9 /* AppDelegate.swift */; };
 		CDEB3FB4248F9425007300C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB3FB3248F9425007300C9 /* SceneDelegate.swift */; };
 		CDEB3FB6248F9425007300C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB3FB5248F9425007300C9 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		CD7291EA249105F1008176EB /* ViewController_V2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_V2.swift; sourceTree = "<group>"; };
+		CD7291EC24910F1A008176EB /* arscnview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arscnview.swift; sourceTree = "<group>"; };
 		CDEB3FAE248F9425007300C9 /* onboarding-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "onboarding-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEB3FB1248F9425007300C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDEB3FB3248F9425007300C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				CDEB3FBA248F9425007300C9 /* onboarding_test.xcdatamodeld */,
 				CDEB3FE4248FACB2007300C9 /* SceneKit Scene.scn */,
 				CD7291EA249105F1008176EB /* ViewController_V2.swift */,
+				CD7291EC24910F1A008176EB /* arscnview.swift */,
 			);
 			path = "onboarding-test";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				CD7291EB249105F1008176EB /* ViewController_V2.swift in Sources */,
 				CDEB3FB2248F9425007300C9 /* AppDelegate.swift in Sources */,
 				CDEB3FBC248F9425007300C9 /* onboarding_test.xcdatamodeld in Sources */,
+				CD7291ED24910F1A008176EB /* arscnview.swift in Sources */,
 				CDEB3FB4248F9425007300C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

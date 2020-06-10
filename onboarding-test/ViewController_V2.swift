@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import ARKit
+
 
 class ViewController_V2: UIViewController {
     
     
+    @IBOutlet weak var sceneview: ARSCNView!
     @IBOutlet weak var btnAbout: UIButton!
     @IBOutlet weak var btnAdd: UIButton!
     @IBOutlet weak var btnScreenshot: UIButton!
