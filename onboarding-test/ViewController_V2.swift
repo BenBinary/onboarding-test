@@ -61,14 +61,23 @@ class ViewController_V2: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+    var borderWidth : CGFloat = 4 // Should be less or equal to the `radius` property
+    var radius : CGFloat = 10
+    var triangleHeight : CGFloat = 15
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func bubblePathForContentSize(contentSize: CGSize) -> UIBezierPath {
+        let rect = CGRect(0, 0, contentSize.width, contentSize.height).offsetBy(dx: radius, dy: radius + triangleHeight)
+        let path = UIBezierPath();
+        let radius2 = radius - borderWidth / 2 // Radius adjasted for the border width
+
+        path.moveToPoint(CGPointMake(rect.maxX - triangleHeight * 2, rect.minY - radius2))
+        path.addLineToPoint(CGPointMake(rect.maxX - triangleHeight, rect.minY - radius2 - triangleHeight))
+        path.addArcWithCenter(CGPointMake(rect.maxX, rect.minY), radius: radius2, startAngle: CGFloat(-M_PI_2), endAngle: 0, clockwise: true)
+        path.addArcWithCenter(CGPointMake(rect.maxX, rect.maxY), radius: radius2, startAngle: 0, endAngle: CGFloat(M_PI_2), clockwise: true)
+        path.addArcWithCenter(CGPointMake(rect.minX, rect.maxY), radius: radius2, startAngle: CGFloat(M_PI_2), endAngle: CGFloat(M_PI), clockwise: true)
+        path.addArcWithCenter(CGPointMake(rect.minX, rect.minY), radius: radius2, startAngle: CGFloat(M_PI), endAngle: CGFloat(-M_PI_2), clockwise: true)
+        path.closePath()
+        return path
     }
-    */
 
 }
